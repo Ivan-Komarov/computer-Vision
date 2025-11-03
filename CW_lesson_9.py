@@ -54,10 +54,11 @@ print("Клас:", label)
 print("Ймовірність:", round(conf, 2), "%")
 
 # 9) Підписуємо результат на зображенні простим текстом
-text = label + ": " + str(int(conf)) + "%"   # максимально просто: без форматних специфікаторів
+text = label + ": " + str(int(conf)) + "%"   
 cv2.putText(image, text, (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
 # 10) Показуємо вікно з результатом. Натисни будь-яку клавішу, щоб закрити.
 cv2.imshow("result", image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
